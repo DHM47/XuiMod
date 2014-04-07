@@ -224,6 +224,11 @@
             android:key="window_transitions"
             android:summary="@string/window_transitions_summary"
             android:title="@string/window_transitions_title" />
+        
+         <CheckBoxPreference
+            android:key="rotation_animatoin"
+            android:summary="@string/rotation_animatoin_summary"
+            android:title="@string/rotation_animatoin_title" />
     </PreferenceScreen>
     
     <!-- IME Animations -->

@@ -52,6 +52,8 @@ public class Common {
 	
 	public static final String KEY_WINDOW_TRANSITIONS = "window_transitions";
 	
+	public static final String KEY_ROTATION_ANIMATION = "rotation_animatoin";
+	
 	public static final String KEY_VOLUME_TIMEOUT = "volume_timeout";
 	public static final String KEY_VOLUME_ALPHA = "volume_alpha";
 	public static final String KEY_LOCKSCREEN_VOLUME = "lockscreen_volume";
@@ -156,6 +158,8 @@ public class Common {
 	public static final int DEFAULT_LISTVIEW_DURATION = 500;
 	
 	public static final String DEFAULT_WINDOW_TRANSITIONS = "0";
+	
+	public static final boolean DEFAULT_ROTATION_ANIMATION = false;
 	
 	public static final String DEFAULT_VOLUME_TIMEOUT = "3000";
 	public static final int DEFAULT_VOLUME_ALPHA = 100;

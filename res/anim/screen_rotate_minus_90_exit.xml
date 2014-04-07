@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shareInterpolator="false">
+    <!-- Version for two-phase animation
+    <rotate android:fromDegrees="0" android:toDegrees="90"
+            android:pivotX="50%" android:pivotY="50%"
+            android:interpolator="@android:interpolator/decelerate_quint"
+            android:fillEnabled="true"
+            android:fillBefore="true" android:fillAfter="true"
+            android:duration="@android:integer/config_longAnimTime" />
+    -->
+    
+    <scale     android:interpolator="@android:anim/linear_interpolator" 
+	    		android:startOffset="250"
+	    		android:duration="150" 
+	    		android:fillEnabled="true"
+           		android:fillBefore="false" android:fillAfter="true"
+	    		android:pivotX="100%" android:pivotY="100%" 
+	    		android:fromXScale="1.0" android:toXScale="1" 
+	    		android:fromYScale="100%" android:toYScale="100%p" />
+    
+    <rotate    android:interpolator="@android:anim/linear_interpolator" 
+	    		android:duration="250"
+	    		android:pivotX="0%" 
+	    		android:pivotY="0%" 
+	    		android:fromDegrees="0" 
+	    		android:toDegrees="90" 
+	    		android:fillEnabled="true"
+           		android:fillBefore="false" android:fillAfter="true"/>
+    
+    <translate android:interpolator="@android:anim/linear_interpolator"
+        		android:duration="250" 
+        		android:fillEnabled="true"
+           		android:fillBefore="false" android:fillAfter="true"
+        		android:fromXDelta="0.0%" android:toXDelta="100%p"/>
+    
+   <alpha     android:interpolator="@android:anim/linear_interpolator"
+      			android:startOffset="250" 
+        		android:duration="150" 
+	    		android:fillEnabled="true"
+           		android:fillBefore="false" android:fillAfter="true"
+       			android:fromAlpha="1.0" android:toAlpha="0.0"/>
+    
+   
+    
+	
+    
+	
+
+</set>

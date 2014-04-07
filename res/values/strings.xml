@@ -52,6 +52,10 @@
     <string name="window_transitions_honami">Xperia Z1 Transitions</string>
     <string name="window_transitions_toko">TokoROM Transitions</string>
     
+    <!-- Rotation Anim Pref -->
+    <string name="rotation_animatoin_title">Use custom rotation animatoin</string>
+    <string name="rotation_animatoin_summary">(Requires reboot to take effect)</string>
+    
     <!-- Animation Controls -->
     <string name="anim_controls_main_title">Animation Controls</string>
     <string name="anim_controls_main_summary">Control individual system transitions</string>

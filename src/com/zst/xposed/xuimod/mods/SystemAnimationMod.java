@@ -40,6 +40,9 @@ public class SystemAnimationMod {
 		
 		final XModuleResources modRes = XModuleResources.createInstance(XuiMod.MODULE_PATH, resparam.res);
 		
+		boolean rotation =pref.getBoolean(Common.KEY_ROTATION_ANIMATION,Common.DEFAULT_ROTATION_ANIMATION);
+		if(rotation) initrotateAnim(modRes);
+		
 		int transition = Integer.parseInt(pref.getString(Common.KEY_WINDOW_TRANSITIONS, Common.DEFAULT_WINDOW_TRANSITIONS));
 		switch (transition){
 		case NO_ANIMATION:
@@ -188,6 +191,13 @@ public class SystemAnimationMod {
 		setSystemAnimationReplacement("task_close_exit", modRes.fwd(R.anim.toko_task_close_exit));
 		setSystemAnimationReplacement("task_open_enter", modRes.fwd(R.anim.toko_task_open_enter));
 		setSystemAnimationReplacement("task_open_exit", modRes.fwd(R.anim.toko_task_open_exit));
+	}
+	
+	private static void initrotateAnim(final XModuleResources modRes){
+		setSystemAnimationReplacement("screen_rotate_plus_90_enter" , modRes.fwd(R.anim.screen_rotate_plus_90_enter));
+		setSystemAnimationReplacement("screen_rotate_plus_90_exit"  , modRes.fwd(R.anim.screen_rotate_plus_90_exit));
+		setSystemAnimationReplacement("screen_rotate_minus_90_enter", modRes.fwd(R.anim.screen_rotate_minus_90_enter));
+		setSystemAnimationReplacement("screen_rotate_minus_90_exit" , modRes.fwd(R.anim.screen_rotate_minus_90_exit));
 	}
 	
 	private static void setSystemAnimationReplacement(String name, XResForwarder replacement) {
